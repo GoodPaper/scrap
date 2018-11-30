@@ -46,6 +46,22 @@ class Naver( object ):
 
         return extr
 
+    def future(self):
+
+        # https: // finance.naver.com / sise / sise_index.nhn?code = FUT
+
+        pass
+
+    def instFundamental( self, code ):
+
+        # stocks
+        # foreign( limit, take, ratio )
+        # per / eps - wisefn, krx
+        # expected per eps
+        # pbr, bps
+        # dividened ratio
+        pass
+
     def instConsensus( self, code ):
 
         soup = get(
@@ -97,3 +113,15 @@ class Naver( object ):
 
         return ds, cons, reco
 
+    def instDebates( self, code ):
+
+        # date / title / opinion / writer / see / up / down
+
+        pass
+
+    def moneyTrend( self ):
+
+        # https://finance.naver.com/sise/sise_deposit.nhn
+        # deposit / credit / fund( stock, hybrid, yield )
+
+        pass
